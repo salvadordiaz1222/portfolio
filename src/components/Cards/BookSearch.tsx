@@ -26,6 +26,7 @@ export const BookSearchFront = () => {
         }}
       >
         <img src="/" alt="Google Book Search" height="100%" width="100%" />
+        {/* add screenshot */}
       </Box>
       <Box
         sx={{
