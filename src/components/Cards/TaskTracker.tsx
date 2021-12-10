@@ -25,7 +25,7 @@ export const TaskTrackerFront = () => {
         }}
       >
         <img
-          src="/assets/images/task-tracker.png"
+          src="/portfolio/assets/images/task-tracker.png"
           alt="Task Tracker"
           height="100%"
           width="100%"

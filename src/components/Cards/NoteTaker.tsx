@@ -30,7 +30,7 @@ export const NoteTakerFront = () => {
         }}
       >
         <img
-          src="/assets/images/note-taker.png"
+          src="/portfolio/assets/images/note-taker.png"
           alt="Note Taker"
           height="100%"
           width="100%"

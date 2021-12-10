@@ -18,15 +18,19 @@ export const BookSearchFront = () => {
         sx={{
           position: "absolute",
           minWidth: {
-            lg: "422px",
+            lg: "242px",
             xs: "300px",
           },
           top: "25%",
-          right: "56%",
+          right: "60%",
         }}
       >
-        <img src="/" alt="Google Book Search" height="100%" width="100%" />
-        {/* add screenshot */}
+        <img
+          src="/portfolio/assets/images/Google-Book-Search.png"
+          alt="Google Book Search"
+          height="100%"
+          width="100%"
+        />
       </Box>
       <Box
         sx={{

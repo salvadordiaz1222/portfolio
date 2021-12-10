@@ -26,7 +26,7 @@ export const BudgetTrackerFront = () => {
         }}
       >
         <img
-          src="/assets/images/budget-tracker.png"
+          src="/portfolio/assets/images/budget-tracker.png"
           alt="Budget Tracker"
           height="100%"
           width="100%"

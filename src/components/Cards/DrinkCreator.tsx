@@ -1,13 +1,13 @@
 import { Button, Typography } from "@mui/material";
-import { red } from "@mui/material/colors";
+import { blueGrey, teal } from "@mui/material/colors";
 import { Box } from "@mui/system";
 import React from "react";
 
-export const WorkoutTrackerFront = () => {
+export const DrinkCreatorFront = () => {
   return (
     <Box
       sx={{
-        backgroundColor: red[400],
+        backgroundColor: blueGrey[300],
         position: "relative",
         width: "100%",
         height: "100%",
@@ -18,16 +18,16 @@ export const WorkoutTrackerFront = () => {
         sx={{
           position: "absolute",
           minWidth: {
-            lg: "422px",
+            lg: "242px",
             xs: "300px",
           },
           top: "25%",
-          left: "56%",
+          right: "60%",
         }}
       >
         <img
-          src="/portfolio/assets/images/fitness-tracker.png"
-          alt="Budget Tracker"
+          src="/portfolio/assets/images/drink-creator.png"
+          alt="create your own drink"
           height="100%"
           width="100%"
         />
@@ -38,41 +38,39 @@ export const WorkoutTrackerFront = () => {
           maxWidth: "50%",
           top: "50%",
           transform: "translateY(-50%)",
-          left: "4%",
+          right: "4%",
         }}
       >
         <Typography variant="h4" sx={{ fontWeight: 600, color: "white" }}>
-          Workout Tracker
+          Create your own drink
         </Typography>
         <Typography
           variant="subtitle1"
-          color="white"
-          sx={{ display: { xs: "none", sm: "inherit" } }}
+          sx={{ color: "white", display: { xs: "none", sm: "inherit" } }}
         >
-          An application that allows users to create, track and view daily
-          workouts. A dashboard is available so they can see all of their
-          workouts.
+          An application that will create your own drink based on your answers
+          to each question.
         </Typography>
       </Box>
     </Box>
   );
 };
 
-export const WorkoutTrackerBack = () => {
+export const DrinkCreatorBack = () => {
   return (
     <Box
       sx={{
         paddingTop: { lg: "36px", xs: "28px" },
         textAlign: "center",
         maxWidth: "50%",
-        margin: "0 auto",
+        margin: "auto",
       }}
     >
       <Typography variant="h6" sx={{ fontWeight: 600, color: "white" }}>
         Technologies Used
       </Typography>
-      <Typography variant="subtitle1" color="white" sx={{ display: "block" }}>
-        MongoDB, Mongoose, Express JS, Heroku
+      <Typography variant="subtitle1" sx={{ color: "white", display: "block" }}>
+        Express, GraphQL, Mongoose, Apollo, Material UI, React
       </Typography>
       <Box
         sx={{
@@ -86,14 +84,14 @@ export const WorkoutTrackerBack = () => {
         <Button
           variant="outlined"
           size="medium"
-          href="https://github.com/salvadordiaz1222/Workout-tracker"
+          href="https://github.com/LRumgay/Cyber-tender"
         >
           GitHub
         </Button>
         <Button
           variant="outlined"
           size="medium"
-          href="https://workout-tracker-app.herokuapp.com/"
+          href="https://cyber-bar.herokuapp.com/"
         >
           Demo
         </Button>

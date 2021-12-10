@@ -21,6 +21,10 @@ import {
 } from "./Cards/WorkoutTracker";
 import { BudgetTrackerFront, BudgetTrackerBack } from "./Cards/BudgetTracker";
 import { TaskTrackerFront, TaskTrackerBack } from "./Cards/TaskTracker";
+import { BookSearchFront, BookSearchBack } from "./Cards/BookSearch";
+import { DrinkCreatorFront, DrinkCreatorBack } from "./Cards/DrinkCreator";
+import { ContactInfo } from "./ContactInfo";
+import { Skills } from "./Skills";
 
 const Layout = () => {
   return (
@@ -53,6 +57,7 @@ const Layout = () => {
           sx={{
             fontWeight: 600,
             color: "text.primary",
+            marginBottom: "45px",
           }}
         >
           Salvador Diaz
@@ -70,20 +75,22 @@ const Layout = () => {
         >
           <Avatar
             alt="Salvador Diaz"
-            src="/assets/images/salvador.jpg"
+            src="/portfolio/assets/images/salvador.jpg"
             sx={{
               width: { lg: 120, xs: 180 },
               height: { lg: 120, xs: 180 },
               gridColumn: { xs: "1 / span 2" },
               justifySelf: "center",
-              marginBottom: { lg: "4px", xs: "10px" },
+              marginBottom: { lg: "45px", xs: "10px" },
             }}
           />
+          <ContactInfo />
           <Typography
             variant="h5"
             color="primary"
             sx={{
-              marginBottom: { lg: "2px", xs: "14px" },
+              marginBottom: { lg: "12px", xs: "14px" },
+              marginTop: { lg: "5px" },
               color: "text.primary",
             }}
           >
@@ -123,30 +130,7 @@ const Layout = () => {
             proven problem solving skills. Self-starter that thrives in
             collaborative team environments.{" "}
           </Typography>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-around",
-              gridColumn: { xs: "1 / span 2" },
-            }}
-          >
-            <IconButton
-              size="large"
-              href="www.linkedin.com/in/salvador-diaz122291"
-            >
-              <LinkedInIcon />
-            </IconButton>
-            <IconButton size="large" href="https://github.com/salvadordiaz1222">
-              <GitHubIcon />
-            </IconButton>
-            <IconButton size="large" href="tel:832-878-2802">
-              <PhoneIcon />
-            </IconButton>
-            <IconButton size="large" href="mailto:salvador.diaz1222@gmail.com">
-              <EmailIcon />
-            </IconButton>
-          </Box>
+          <Skills />
         </Box>
       </Grid>
       <Grid xs={12} item sx={{ display: { sm: "none" } }}>
@@ -238,6 +222,21 @@ const Layout = () => {
           }}
         >
           {/* ----------------------------------------------                Google Books Search       -------------------------------------------------- */}
+          <FlipCard front={<BookSearchFront />} back={<BookSearchBack />} />
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          lg={6}
+          sx={{
+            width: { xs: "100%", lg: "50%" },
+            height: { lg: "50%", xs: "auto" },
+            maxHeight: { xs: "400px", lg: "none" },
+            minHeight: { xs: "350px", lg: "none" },
+          }}
+        >
+          {/* -------------------------------------------------               Drink Creator       --------------------------------------------------- */}
+          <FlipCard front={<DrinkCreatorFront />} back={<DrinkCreatorBack />} />
         </Grid>
       </Grid>
     </Grid>

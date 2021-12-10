@@ -29,6 +29,7 @@ const useStyles = makeStyles({
     backfaceVisibility: "hidden",
     backgroundColor: "#bbb",
     color: "black",
+    zIndex: 1,
   },
   flipCardBack: {
     position: "absolute",
@@ -38,6 +39,7 @@ const useStyles = makeStyles({
     // backgroundColor: "dodgerblue",
     color: "black",
     transform: "rotateY(180deg)",
+    zIndex: 2,
   },
 });
 
